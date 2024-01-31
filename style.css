@@ -1,0 +1,178 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+div.header{
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+}
+.header div.logo{
+    color:  rgb(20, 120, 159);
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+div.header div.nav{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+div.header div.nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    align-content: center;
+    justify-content: flex-end;
+    margin-right: 15px;
+}
+div.header div.nav ul li{
+    display: flex;
+    flex-wrap: wrap;
+}
+div.header div.nav ul li a{
+    text-decoration: none;
+    color:  rgb(20, 120, 159);
+}
+div.header div.click{
+    margin-top: 35px;
+    display: none;
+
+}
+div.container{
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+div.container div.travel{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(24, 109, 143);
+    /* margin: 80px;
+    align-items: center; */
+    margin: 40px 0px;
+    padding: 50px;
+}
+div.container div.travel div.about{
+    width: 100%;
+    height: 100%;
+    border: 4px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 0px 30px;
+    /* margin: 20px; */
+}
+div.container div.travel div.about h4{
+    font-size: 1em;
+}
+div.container div.travel div.about h1{
+    font-size: 3em;
+    margin-top: -20px;
+}
+div.container div.travel div.about p{
+    font-size: larger;
+    text-align: center;
+    line-height: 20px;
+    margin-top: -4px;
+}
+div.container div.travel div.about p a{
+    color: white;
+}
+div.container div.travel div.about button{
+    background-color: rgb(24, 109, 143);
+    height: 40px;
+    width: 130px;
+    border: 2px solid white;
+    color: white;
+}
+div.container div.travel div.about button:hover{
+    color: rgb(24, 109, 143);
+    background-color: white;
+}
+div.container div.tour{
+    width: 40%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* margin: 0px;
+    padding: 0; */
+    margin: 40px 0px;
+}
+div.container div.tour img{
+    width: 50%;
+    height: 50%;
+}
+footer{
+    background-color: rgb(51, 42, 42);
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+footer p{
+    color: white;
+    align-items: center;
+}
+footer a{
+    color: skyblue;
+}
+@media screen and ( max-width: 426px) {
+    
+    div.header div.nav{
+        display: none;
+    }
+    div.header div.click{
+        display: block;
+
+        margin-right: 10px;
+    }
+    div.container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    div.travel{
+        width: 60%;
+        text-align: center;
+    }
+    div.tour{
+        width: 60%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    div.tour img{
+        /* width: 100%; */
+        flex-direction: row;
+        flex-wrap: wrap ;
+    }
+    footer{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    footer p{
+        margin-left: 15px;
+    }
+
+    
+}
